@@ -85,6 +85,7 @@ def delete_request(user_id):
     headers = {"Authorization": auth_token}
     response = requests.delete(url, headers=headers)
     assert response.status_code == 204
+    assert response.status_code == 204
     print(".......DELETE USER IS DONE.......")
     print(".......=====================.......")
 
